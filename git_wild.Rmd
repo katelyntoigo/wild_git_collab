@@ -34,8 +34,9 @@ diamonds_sub <- diamonds %>%
 ## STEP 7: Uh oh, merge conflicts!
 
 ```{r break-it-1}
-Hey check out my cool code. 
-
+# this should cause problems
+diamonds_subset <- diamonds %>% 
+  filter(carat < 1 | cut != 'Ideal')
 
 ```
 
